@@ -39,6 +39,8 @@ give me a full summary of every component, every utility, the state management
 approach, and then suggest 5 new features I could add?
 ```
 
+- click on "**view and more actions**" in the chat pane ontop right corner and select "**Show Agent debug logs**" to see the tokens consumed by this prompt.
+- Record the total tokens consumed for this prompt.
 
 
 **Baseline tokens: ___________**
