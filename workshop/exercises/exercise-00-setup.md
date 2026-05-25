@@ -39,6 +39,8 @@ give me a full summary of every component, every utility, the state management
 approach, and then suggest 5 new features I could add?
 ```
 
+
+
 **Baseline tokens: ___________**
 
 This prompt is intentionally wasteful — you'll cut it by ~50% across exercises 01–03.
