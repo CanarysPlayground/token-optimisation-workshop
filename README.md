@@ -71,11 +71,12 @@ If you have more time or want to explore the remaining habits individually:
 
 ---
 
-## Facilitator Notes
+<!--## Facilitator Notes
 - **Keep energy up:** exercises 01–03 are ~15 min each; move on even if attendees haven't finished — they can catch up later
 - **Timebox exercise 07** strictly at 25 min — it's the payoff moment
 - Token counts are recorded manually; ask attendees to have the Output panel open (`View → Output → GitHub Copilot`) before each exercise
 - Exercises 04–06 can be assigned as take-home practice
+-->
 
----
+**Next:** [Exercise 01 — File Context](exercise-01-file-context.md)
 
