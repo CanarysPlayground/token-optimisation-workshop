@@ -79,5 +79,3 @@ If you have more time or want to explore the remaining habits individually:
 
 ---
 
-*Reference slides: https://aka.ms/ghcp-tkn-opt*
-*Live demo app: https://ashy-dune-0b4215a0f.7.azurestaticapps.net/index.html*
