@@ -78,5 +78,6 @@ If you have more time or want to explore the remaining habits individually:
 - Exercises 04–06 can be assigned as take-home practice
 -->
 
-**Next:** [Exercise 01 — File Context](exercise-01-file-context.md)
+**Next:** [Exercise 00 — Environment Setup & Baseline Measurement](workshop/exercises/exercise-00-setup.md)
+
 
