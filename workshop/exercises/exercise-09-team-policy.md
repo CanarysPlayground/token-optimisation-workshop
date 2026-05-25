@@ -1,5 +1,7 @@
 # Exercise 09 — Write a Team Token Budget Policy
 
+> **OPTIONAL** — This exercise is outside the 90-minute core agenda. Complete it if you have extra time or as take-home practice.
+
 **Duration:** 25 minutes  
 **Goal:** Draft a reusable team policy document that embeds all 6 habits into your team's Copilot workflow.
 

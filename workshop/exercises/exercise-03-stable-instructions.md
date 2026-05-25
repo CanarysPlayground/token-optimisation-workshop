@@ -1,6 +1,6 @@
 # Exercise 03 — Short, Stable Instructions
 
-**Duration:** 20 minutes  
+**Duration:** 15 minutes  
 **Habit:** #3 — Write short, stable instructions  
 **Potential saving:** ~7%  
 **App focus:** `.github/copilot-instructions.md` (create it), `src/components/`
@@ -74,22 +74,6 @@ Record tokens: **With optimised instructions: ___________**
 
 ---
 
-## Part D — Test that instructions work
-
-Ask Copilot (attach `src/components/Dashboard/Dashboard.tsx`):
-
-```
-Add a new stat card showing the user's active goal count to the quick-access grid.
-```
-
-Verify the suggestion:
-- Uses `useStore` (not local state)
-- Uses Tailwind classes from the dark/neon palette
-- Has no JSDoc or inline comments
-- Exports a named function (not default)
-
----
-
 ## The golden rules for instructions
 
 | Rule | Reasoning |
@@ -109,4 +93,4 @@ Verify the suggestion:
 
 ---
 
-**Next:** [Exercise 04 — Reasoning Budget](exercise-04-reasoning-budget.md)
+**Next:** [Exercise 07 — Compound Savings](exercise-07-compound-savings.md)

@@ -1,8 +1,8 @@
 # Exercise 07 — Compound Savings
 
 **Duration:** 25 minutes  
-**Habits:** All 6  
-**Goal:** Apply all 6 habits simultaneously to a real feature and calculate the combined saving.
+**Habits:** 1, 2, 3 (+ 4–6 if covered)  
+**Goal:** Apply the three habits you've learned simultaneously to a real feature and measure the combined saving.
 
 ---
 
@@ -15,16 +15,16 @@ You must implement this using all 6 habits — the facilitator will observe your
 
 ---
 
-## The 6-habit checklist (fill in BEFORE you start)
+## Pre-flight checklist (fill in BEFORE you start)
 
 | # | Habit | Your plan |
 |---|-------|----------|
 | 1 | Point at exact files | Which files will you attach? |
 | 2 | Right model | Which model for which step? |
 | 3 | Short instructions | Does your `.github/copilot-instructions.md` exist and is it < 100 tokens? |
-| 4 | No extended thinking | Is reasoning mode off for the implementation step? |
-| 5 | Minimal tools | Which tools will you enable? |
-| 6 | Fresh chat | Will you open a new chat for this task? |
+| 4 *(optional)* | No extended thinking | Is reasoning mode off? |
+| 5 *(optional)* | Minimal tools | Which tools will you enable? |
+| 6 *(optional)* | Fresh chat | Will you open a new chat for this task? |
 
 ---
 
@@ -56,22 +56,7 @@ Apply the change. Record tokens: **Step 2: ___________**
 
 ---
 
-### Step 3 — Update the store (new chat, mini model, attach store file)
-
-Fresh chat, attach `src/store/useStore.ts`, ask:
-
-```
-Add streakDays and lastActiveDate to the store initial state and add an 
-updateStreak() action that: checks if lastActiveDate was yesterday, 
-increments streakDays if yes, resets to 1 if more than a day has passed, 
-and updates lastActiveDate to today.
-```
-
-Apply and record tokens: **Step 3: ___________**
-
----
-
-### Step 4 — Add UI (new chat, mid model, attach Gamification component)
+### Step 3 — Add UI (new chat, mid model, attach Gamification component)
 
 Fresh chat, attach `src/components/GamifiedGrowth/GamifiedGrowth.tsx`, ask:
 
@@ -81,31 +66,29 @@ using the same glassmorphism card style as the level card.
 Use a 🔥 emoji and neon-orange colour. Place it below the level card.
 ```
 
-Apply and record tokens: **Step 4: ___________**
+Apply and record tokens: **Step 3: ___________**
 
 ---
 
-## Measure your total cost
+## Measure your total saving
 
-| Step | Tokens | What would it have been without habits? |
-|------|--------|-----------------------------------------|
-| 1 | | ~800 (large model + no fresh chat) |
-| 2 | | ~2,000 (full workspace scan) |
-| 3 | | ~3,500 (accumulated history) |
-| 4 | | ~4,000 (all tools + reasoning) |
-| **Total** | | **~10,300 estimated** |
+| Step | Your tokens | Unoptimised estimate |
+|------|-------------|---------------------|
+| 1 — Plan | | ~800 (large model, no fresh chat) |
+| 2 — Types | | ~2,000 (full workspace scan) |
+| 3 — UI | | ~4,000 (all tools, accumulated history) |
+| **Total** | | **~6,800 estimated** |
 
-Calculate your saving: `(10,300 − your total) / 10,300 × 100 = ____ %`
+Your saving: `(6,800 − your total) / 6,800 × 100 = ____ %`
 
 ---
 
 ## Checkpoint ✓
 
-- [ ] Weekly streak counter visible in the Growth view
-- [ ] `npm run build` passes
-- [ ] Total token saving calculated and > 40%
-- [ ] All 6 habits applied (facilitator sign-off)
+- [ ] Streak card visible in the Growth view
+- [ ] Token saving calculated (target > 40%)
+- [ ] All 3 core habits applied
 
 ---
 
-**Next:** [Exercise 08 — Measuring Impact](exercise-08-measuring-impact.md)
+**Done!** Explore the [optional exercises](../README.md#optional--extended-exercises) if time allows.

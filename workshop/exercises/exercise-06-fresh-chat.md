@@ -1,5 +1,7 @@
 # Exercise 06 — Open a New Chat per Task
 
+> **OPTIONAL** — This exercise is outside the 90-minute core agenda. Complete it if you have extra time or as take-home practice.
+
 **Duration:** 15 minutes  
 **Habit:** #6 — Start a fresh chat for each new task  
 **Potential saving:** ~8%  

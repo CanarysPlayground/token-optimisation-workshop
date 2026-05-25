@@ -1,6 +1,6 @@
 # Exercise 01 — Point at the Exact File
 
-**Duration:** 20 minutes  
+**Duration:** 15 minutes  
 **Habit:** #1 — Point Copilot at the exact file(s)  
 **Potential saving:** ~11%  
 **App focus:** `src/utils/aiSimulator.ts`
@@ -43,19 +43,6 @@ Record tokens: **With file: ___________**
 
 ---
 
-## Part C — Practice task
-
-Still with `aiSimulator.ts` attached, ask Copilot to:
-
-```
-Add the keyword "stress" to the existing fear/anxiety response branch 
-in the generateFutureResponse function. Show only the changed block.
-```
-
-Apply the suggested change. The app should still build (`npm run build`).
-
----
-
 ## Why this works
 
 When you attach a specific file, Copilot **replaces** the broad workspace scan with a precise, smaller context. The model sees exactly what it needs — nothing more.
@@ -80,7 +67,6 @@ When you attach a specific file, Copilot **replaces** the broad workspace scan w
 ## Checkpoint ✓
 
 - [ ] Measured token difference with/without file context
-- [ ] "stress" keyword added and build passes
 - [ ] Token saving recorded
 
 ---

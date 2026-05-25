@@ -1,5 +1,7 @@
 # Exercise 10 — Capstone: End-to-End Optimised Feature Build
 
+> **OPTIONAL** — This exercise is outside the 90-minute core agenda. Complete it if you have extra time or as take-home practice.
+
 **Duration:** 30 minutes  
 **Habits:** All 6  
 **Goal:** Build a complete new feature from scratch using every optimisation habit, then present your token scorecard.

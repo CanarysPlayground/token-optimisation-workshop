@@ -1,6 +1,6 @@
 # Exercise 02 — Use the Right Model
 
-**Duration:** 20 minutes  
+**Duration:** 15 minutes  
 **Habit:** #2 — Use a smaller / cheaper model when power isn't needed  
 **Potential saving:** ~9%  
 **App focus:** `src/types/index.ts`
@@ -17,20 +17,6 @@
 | o1 / Claude Opus | Deep research, novel algorithm design | Very high |
 
 > **Rule of thumb:** If a junior dev could answer the question in 10 seconds, a mini model can too.
-
----
-
-## Part A — Identify task complexity
-
-For each task below, decide which model tier is appropriate:
-
-| Task | Your choice |
-|------|------------|
-| "Add a `createdAt: Date` field to the `Goal` type" | ______ |
-| "Redesign the entire state management architecture to use Redux Toolkit" | ______ |
-| "Fix this TypeScript error: Property 'x' does not exist on type 'Y'" | ______ |
-| "Explain the pros and cons of Zustand vs Jotai vs Redux for this app" | ______ |
-| "Add JSDoc to the `computeProjection` function" | ______ |
 
 ---
 
@@ -55,21 +41,6 @@ Record tokens: **Large model: ___________**
 
 ---
 
-## Part C — Complex task, appropriate model
-
-1. Keep the model on **GPT-4o** (or Claude Sonnet)
-2. Attach `src/utils/progressCalculator.ts`
-3. Run:
-
-```
-Analyse the scoring algorithm in computeProjection. Identify any logical 
-weaknesses in how habits affect the wealthScore and suggest an improved formula.
-```
-
-This genuinely benefits from a capable model — the saving from a mini here would cost quality.
-
----
-
 ## Decision framework
 
 ```
@@ -88,7 +59,6 @@ Does it require novel design or research?
 ## Checkpoint ✓
 
 - [ ] Measured token difference between mini and large on a simple task
-- [ ] `createdAt` added to `Goal` and build passes
 - [ ] Can articulate when NOT to use a large model
 
 ---

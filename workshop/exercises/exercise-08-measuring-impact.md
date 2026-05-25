@@ -1,5 +1,7 @@
 # Exercise 08 — Measuring Impact
 
+> **OPTIONAL** — This exercise is outside the 90-minute core agenda. Complete it if you have extra time or as take-home practice.
+
 **Duration:** 20 minutes  
 **Habits:** Metrics & dashboards  
 **Goal:** Learn where to find token usage data, interpret it, and forecast team costs.

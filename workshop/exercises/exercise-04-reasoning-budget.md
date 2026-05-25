@@ -1,5 +1,7 @@
 # Exercise 04 — Limit Reasoning Effort
 
+> **OPTIONAL** — This exercise is outside the 90-minute core agenda. Complete it if you have extra time or as take-home practice.
+
 **Duration:** 15 minutes  
 **Habit:** #4 — Limit reasoning effort (disable extended thinking for simple tasks)  
 **Potential saving:** ~6%  

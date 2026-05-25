@@ -1,5 +1,7 @@
 # Exercise 05 — Turn Off Unused Tools
 
+> **OPTIONAL** — This exercise is outside the 90-minute core agenda. Complete it if you have extra time or as take-home practice.
+
 **Duration:** 20 minutes  
 **Habit:** #5 — Turn off unused tools in agent mode  
 **Potential saving:** ~9%  
