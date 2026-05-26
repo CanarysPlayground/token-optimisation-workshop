@@ -63,6 +63,18 @@ If you have more time or want to explore the remaining habits individually:
 | [10 — Capstone](exercises/exercise-10-capstone.md) | All | Full end-to-end optimised feature build |
 | [11 — MCP Optimisation](exercises/exercise-11-mcp-optimisation.md) | MCP | Cut overhead from MCP server tool injection |
 
+### Skills, Agents & Instructions Track
+
+These three exercises form a self-contained track on using VS Code's customisation features to encode knowledge once and eliminate repeated context cost. Work through them in order for maximum impact.
+
+| Exercise | Theme | Potential saving |
+|----------|-------|-----------------|
+| [12 — Scoped Instruction Files](exercises/exercise-12-instruction-files.md) | Write tight `copilot-instructions.md` + per-filetype scoped files | ~7–12% per request |
+| [13 — Reusable Prompt Files](exercises/exercise-13-prompt-files.md) | `.github/prompts/` for add-component, add-badge, update-store | ~20–40% on recurring tasks |
+| [14 — Custom Agents](exercises/exercise-14-custom-agents.md) | `.github/agents/` — lock model + tools + domain knowledge per workflow | ~30–50% vs default agent |
+
+> **Combined saving (12 + 13 + 14):** up to **~94%** token reduction on repeated development workflows vs an unoptimised default agent setup.
+
 ---
 
 ## Prerequisites
@@ -72,14 +84,3 @@ If you have more time or want to explore the remaining habits individually:
 - Clone this repo and run `npm install` inside `future-you-simulator/`
 
 ---
-
-## Facilitator Notes
-- **Keep energy up:** exercises 01–03 are ~15 min each; move on even if attendees haven't finished — they can catch up later
-- **Timebox exercise 07** strictly at 25 min — it's the payoff moment
-- Token counts are recorded manually; ask attendees to have the Output panel open (`View → Output → GitHub Copilot`) before each exercise
-- Exercises 04–06 can be assigned as take-home practice
-
----
-
-*Reference slides: https://aka.ms/ghcp-tkn-opt*
-*Live demo app: https://ashy-dune-0b4215a0f.7.azurestaticapps.net/index.html*
