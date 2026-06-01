@@ -1,6 +1,6 @@
 # Token Optimisation Workshop
 ### GitHub Copilot Usage-Based Billing (UBB) — 90-Minute Hands-On Guide
-**App context:** [Future You Simulator](../future-you-simulator/) — a React/TypeScript app used throughout this workshop.
+**App context:** [Future You Simulator](future-you-simulator/) — a React/TypeScript app used throughout this workshop.
 
 ---
 
@@ -32,19 +32,19 @@ The 3 habits below can reduce your team's monthly bill by **~27 %** in under 90 
 
 ---
 
-## Workshop Agenda — 90 Minutes
+## Mandatory Exercises (90-Minute Core)
 
-> Habits 1, 2, and 3 deliver the highest return for the least effort. This session covers them in depth, then lets you combine all six in a timed challenge.
+> Habits 1, 2, and 3 deliver the highest return for the least effort. This session covers them in depth, then combines all six in a timed challenge.
 
-| # | Exercise | Time | Habit | Saving |
-|---|----------|------|-------|--------|
-| [00](exercises/exercise-00-setup.md) | Setup & Baseline | 10 min | All | — |
-| [01](exercises/exercise-01-file-context.md) | File Context | 15 min | Habit 1 | ~11% |
-| [02](exercises/exercise-02-model-selection.md) | Model Selection | 15 min | Habit 2 | ~9% |
-| [03](exercises/exercise-03-stable-instructions.md) | Stable Instructions | 15 min | Habit 3 | ~7% |
-| [07](exercises/exercise-07-compound-savings.md) | Compound Savings | 25 min | All 6 | ~50% |
-| — | Debrief & Q&A | 10 min | — | — |
-| **Total** | | **90 min** | | |
+| # | Exercise | Path | Time | Habit | Saving |
+|---|----------|------|------|-------|--------|
+| 00 | Setup & Baseline | [exercise-00-setup.md](workshop/exercises/exercise-00-setup.md) | 10 min | All | — |
+| 01 | File Context | [exercise-01-file-context.md](workshop/exercises/exercise-01-file-context.md) | 15 min | Habit 1 | ~11% |
+| 02 | Model Selection | [exercise-02-model-selection.md](workshop/exercises/exercise-02-model-selection.md) | 15 min | Habit 2 | ~9% |
+| 03 | Stable Instructions | [exercise-03-stable-instructions.md](workshop/exercises/exercise-03-stable-instructions.md) | 15 min | Habit 3 | ~7% |
+| 07 | Compound Savings | [exercise-07-compound-savings.md](workshop/exercises/exercise-07-compound-savings.md) | 25 min | All 6 | ~50% |
+| — | Debrief & Q&A | — | 10 min | — | — |
+| **Total** |  |  | **90 min** |  |  |
 
 ---
 
@@ -52,14 +52,14 @@ The 3 habits below can reduce your team's monthly bill by **~27 %** in under 90 
 
 If you have more time or want to explore the remaining habits individually:
 
-| Exercise | Habit | Theme |
-|----------|-------|-------|
-| [04 — Reasoning Budget](exercises/exercise-04-reasoning-budget.md) | Habit 4 | Disable extended thinking |
-| [05 — Tool Pruning](exercises/exercise-05-tool-pruning.md) | Habit 5 | Turn off unused agent tools |
-| [06 — Fresh Chat](exercises/exercise-06-fresh-chat.md) | Habit 6 | New chat, clean context |
-| [08 — Measuring Impact](exercises/exercise-08-measuring-impact.md) | Metrics | Reading the UBB dashboard |
-| [09 — Team Policy](exercises/exercise-09-team-policy.md) | Process | Writing a team token budget policy |
-| [10 — Capstone](exercises/exercise-10-capstone.md) | All | Full end-to-end optimised feature build |
+| # | Exercise | Path | Time | Habit | Theme |
+|---|----------|------|------|-------|-------|
+| 04 | Reasoning Budget | [exercise-04-reasoning-budget.md](workshop/exercises/exercise-04-reasoning-budget.md) | Self-paced | Habit 4 | Disable extended thinking |
+| 05 | Tool Pruning | [exercise-05-tool-pruning.md](workshop/exercises/exercise-05-tool-pruning.md) | Self-paced | Habit 5 | Turn off unused agent tools |
+| 06 | Fresh Chat | [exercise-06-fresh-chat.md](workshop/exercises/exercise-06-fresh-chat.md) | Self-paced | Habit 6 | New chat, clean context |
+| 08 | Measuring Impact | [exercise-08-measuring-impact.md](workshop/exercises/exercise-08-measuring-impact.md) | Self-paced | Metrics | Reading the UBB dashboard |
+| 09 | Team Policy | [exercise-09-team-policy.md](workshop/exercises/exercise-09-team-policy.md) | Self-paced | Process | Writing a team token budget policy |
+| 10 | Capstone | [exercise-10-capstone.md](workshop/exercises/exercise-10-capstone.md) | Self-paced | All | Full end-to-end optimised feature build |
 
 ---
 
