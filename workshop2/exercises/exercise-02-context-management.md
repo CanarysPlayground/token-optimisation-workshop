@@ -155,9 +155,83 @@ Apply this change to the component.
 
 ---
 
+### Step 5: Try `/compact` in a long thread
+
+**Scenario:** You've spent 15 turns debugging the `LifeTimeline` sort logic. The thread is long but the task isn't done yet.
+
+1. In the **same chat**, type:
+   ```
+   /compact
+   ```
+2. Copilot replaces the full history with a summary (~200 tokens vs the original ~8,000).
+3. Continue with:
+   ```
+   Attach src/components/LifeTimeline/LifeTimeline.tsx. Now add the "today" marker we discussed.
+   ```
+4. Record tokens on the next prompt — should be dramatically lower than before `/compact`.
+
+> Use `/compact` when: history > 10 turns AND the task is still in progress.
+
+---
+
+### Step 6: `/fork` — Branch without losing your place
+
+**Scenario:** You're mid-way through adding the "today" marker. A colleague asks about the store — you want to answer without polluting the timeline thread.
+
+1. In the current chat, type:
+   ```
+   /fork
+   ```
+2. In the **forked chat**, ask:
+   ```
+   #file:src/store/useStore.ts What does the persist middleware do? One sentence.
+   ```
+3. Answer the side question, then **close the fork** and return to the original chat.
+4. The original thread retains zero context from the side question.
+
+> Use `/fork` when: you have a one-off side question and want to return to the main thread unchanged.
+
+---
+
+### Step 7: Start new chat — Full reset
+
+**Scenario:** You've finished adding the "today" marker. Now you want to work on the `OnboardingForm` — a completely different component.
+
+1. Click **New Chat** (or `Ctrl+Shift+I` → New Chat).
+2. Attach only the relevant file for the new task:
+   ```
+   #file:src/components/Onboarding/OnboardingForm.tsx
+   ```
+3. Ask your question with no prior history overhead:
+   ```
+   Add a "timezone" dropdown field after the name input.
+   ```
+
+> Use a new chat when: the topic shifts, the previous task is done, or you're starting a completely different feature.
+
+---
+
+### Step 8: Save to AGENTS.md — Persist a decision cheaply
+
+**Scenario:** You've decided all timeline events must use `date-fns` for formatting (not `toLocaleDateString`). You want every future chat to know this without repeating it.
+
+1. Open (or create) `future-you-simulator/AGENTS.md`.
+2. Add one line under a `## Conventions` heading:
+   ```markdown
+   ## Conventions
+   - Timeline dates: always format with `date-fns/format`, never `toLocaleDateString`.
+   ```
+3. This file is loaded as a flat instruction (~10 tokens) instead of you re-explaining it in every chat (~50–80 tokens each time).
+
+> Use AGENTS.md for: constraints, library choices, naming rules — anything that applies permanently across sessions.
+
+---
+
 ## Part D — Scoped instructions with `applyTo`
 
 Instead of loading all instructions every turn, scope them to relevant file paths.
+
+### Step 9: Create a scoped instruction file
 
 Create `.github/instructions/timeline.instructions.md` inside `future-you-simulator/`:
 
@@ -171,7 +245,21 @@ Colour coding: past = neon-purple, future = neon-cyan.
 
 This file loads **only** when working on LifeTimeline files, not on every turn.
 
-Test by asking about a different component — confirm the timeline instructions are NOT included.
+### Step 10: Test the scoped instruction
+
+Run the two **relevant** prompts first (instruction file should load), then the **irrelevant** prompt (instruction file should NOT load). Check Agent Debug Logs after each to confirm.
+
+**Relevant prompt 1** — open `src/components/LifeTimeline/LifeTimeline.tsx`, then ask:
+```
+Add a tooltip to each timeline event showing the full date. Follow the project colour coding.
+```
+> Expected: `timeline.instructions.md` appears in the debug log. Copilot knows to use `neon-purple`/`neon-cyan` and recharts without you saying so.
+
+**Irrelevant prompt** — open `src/components/Onboarding/OnboardingForm.tsx`, then ask:
+```
+Add a character counter below the name input field.
+```
+> Expected: `timeline.instructions.md` does **not** appear in the debug log. The `applyTo: "src/components/LifeTimeline/**"` pattern does not match `Onboarding/`, so the instruction is skipped — zero wasted tokens.
 
 ---
 
