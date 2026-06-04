@@ -16,7 +16,7 @@ Your 20-character prompt → 2,000+ tokens billed
 
 The reason: your prompt is only the visible tip. Five hidden layers load before it reaches the model.
 
-![Token Usage](image.png)
+![Token Usage](UBBPromptCost.png)
 
 | Layer | What it contains | Editable? |
 |-------|-----------------|-----------|
@@ -32,6 +32,7 @@ The reason: your prompt is only the visible tip. Five hidden layers load before 
 ---
 
 ## The three billing lanes
+![Token Types](../assets/tokensImage.PNG)
 
 | Lane | What it is | Price multiplier |
 |------|-----------|-----------------|
@@ -64,13 +65,13 @@ npm run dev
 ```
 
 Complete the onboarding (name, age, one goal, one habit).
-
+<!--add some boosting-->
 ---
 
 ## 2. Enable token visibility
 
 1. Open the **Agent Debug Logs** panel (bottom panel → select **Agent Debug Logs** tab)
-2. After each request completes, the **Summary** section shows `Total Output Tokens`, `Total Cached`, `Copilot Usage (AIC)`, and model information
+2. After each request completes, the **Summary** section shows `Total Input Tokens`,`Total Output Tokens`, `Total Cached`, `Copilot Usage (AIC)`.
 
 > **Note:** `Copilot Usage (AIC)` is the primary billing metric under UBB — this is what you will track across all exercises.
 
@@ -82,7 +83,7 @@ Open the calculator and keep it available throughout the workshop:
 
 **[UBB Cost Calculator →](https://ashy-dune-0b4215a0f.7.azurestaticapps.net/detailed/index.html#/calculator)**
 
-After every recording step in any exercise, paste your `Total Output Tokens` and `Copilot Usage (AIC)` values here to convert them to a dollar cost.
+After every recording step in any exercise, paste your `Input Tokens`,`Output Tokens` and `Cached Tokens` values here to convert them to a dollar cost.
 
 ---
 

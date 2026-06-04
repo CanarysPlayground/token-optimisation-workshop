@@ -25,6 +25,8 @@ Agent runs commonly accumulate **50,000+ tokens per session** due to context rel
 
 **Start narrow. Widen only when the task genuinely requires it.**
 
+![Escalation Ladder](../assets/EsalationLadder.png)
+
 | Mention | Use when | Avoid when | Token cost |
 |---------|----------|-----------|-----------|
 | `#selection` | Refactoring a few highlighted lines | Question spans the whole file | Lowest |

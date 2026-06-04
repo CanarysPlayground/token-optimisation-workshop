@@ -42,7 +42,7 @@ Record (from Agent Debug Logs → Summary): **Polite + no file: ___________**
 ### Step 2: Run the same request, compressed + file attached
 
 1. Open `src/utils/aiSimulator.ts`
-2. In Copilot Chat, attach the file (`paperclip` icon or `#file:src/utils/aiSimulator.ts`)
+2. In Copilot Chat, attach the file (`+` icon or `#file:src/utils/aiSimulator.ts`)
 3. Run:
 
 ```
@@ -65,8 +65,9 @@ Test each phrasing for the same request. Attach `src/utils/aiSimulator.ts` each 
 | Pseudo-code | `fn(msg) → scan motivationKeywords → return match\|null` | |
 | Type signature | `function detectKeyword(msg: string): string \| null // scan motivationKeywords` | |
 | Like X but Y | `Like analyzeDecision but scans motivationKeywords, returns first match or null` | |
+| Caveman-speak (Full default) | `detectKeyword. msg in. scan motivationKeywords. first match out. null if none.` | |
 
-> **Goal:** All four produce equivalent code. The token difference is pure overhead you are paying for nothing.
+> **Goal:** All five produce equivalent code. The token difference is pure overhead you are paying for nothing.
 
 ---
 
@@ -82,7 +83,7 @@ case where the keyword already exists?
 
 **STRUCTURED request (~20 tokens):**
 ```
-Add to aiSimulator.ts:
+Add to src/utils/aiSimulator.ts:
 addMotivationKeyword(keyword: string): void
 - push to motivationKeywords if not already present
 ```
@@ -113,7 +114,9 @@ Apply the `addMotivationKeyword` function from the cheaper prompt.
 
 > **Anthropic's tokenizer is the most expensive for non-English text.** A prompt in Hindi or Arabic costs 1.6×–2.0× the same prompt in English — with Claude models.
 
-### Part D — Observe the language tax (informational)
+---
+
+## Part D — Observe the language tax (informational)
 
 Run the same prompt in English and in another language you're comfortable with (or use the examples below). Attach `src/utils/aiSimulator.ts`.
 

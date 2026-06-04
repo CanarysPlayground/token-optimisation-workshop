@@ -64,16 +64,21 @@ Track your tokens across all exercises:
 
 ---
 
-## Setup
+## About the Application
 
-```bash
-cd future-you-simulator
-npm install
-npm run dev
-# → http://localhost:5173
-```
+All exercises use **future-you-simulator** — a personal growth simulator built with the same stack your team uses daily. Every prompt in the workshop is a real development task on this codebase.
 
-Enable token visibility: **Output panel** (`Ctrl+Shift+U`) → **GitHub Copilot** channel.
+| Aspect | Detail |
+|--------|--------|
+| **Stack** | React 18, TypeScript 5, Vite, Tailwind CSS 3, Zustand, Framer Motion, Recharts |
+| **State** | Zustand with `persist` middleware — all state via `src/store/useStore.ts` |
+| **Types** | Centralised in `src/types/index.ts` (`UserProfile`, `Goal`, `Habit`, `FutureProjection`, `Badge`, `Challenge`) |
+| **Key utils** | `aiSimulator.ts` — motivation keyword detection & AI response simulation |
+| | `progressCalculator.ts` — scoring engine (`computeProjection`, `generateBadges`, `generateChallenges`) |
+| **Components** | `Dashboard`, `LifeTimeline`, `GamifiedGrowth`, `DecisionSimulator`, `AlternateReality`, `ChatWithFuture` |
+| **Theme** | Dark (`dark-900` bg) with neon-purple / cyan / green / pink / yellow accent palette |
+
+> **Why this app?** It is deliberately multi-file, has realistic business logic, and touches state management, utilities, and UI — exactly the mix that makes token costs explode without discipline.
 
 ---
 
