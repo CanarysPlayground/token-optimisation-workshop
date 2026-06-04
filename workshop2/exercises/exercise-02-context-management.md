@@ -247,7 +247,7 @@ This file loads **only** when working on LifeTimeline files, not on every turn.
 
 ### Step 10: Test the scoped instruction
 
-Run the two **relevant** prompts first (instruction file should load), then the **irrelevant** prompt (instruction file should NOT load). Check Agent Debug Logs after each to confirm.
+Run the **relevant** prompts first (instruction file should load), then the **irrelevant** prompt (instruction file should NOT load). Check Agent Debug Logs after each to confirm.
 
 **Relevant prompt 1** — open `src/components/LifeTimeline/LifeTimeline.tsx`, then ask:
 ```
