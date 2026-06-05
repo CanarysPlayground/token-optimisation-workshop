@@ -1,4 +1,4 @@
-# Workshop 2 — GitHub Copilot Token Optimization
+# Workshop — GitHub Copilot Token Optimization
 ## Usage-Based Billing (UBB) Deep Dive
 
 **Total duration:** ~3.5 hours  
@@ -9,7 +9,7 @@
 
 ## Why this workshop exists
 
-Starting **June 1, 2026**, GitHub Copilot bills per token. Every prompt, every agent step, every tool call is a measurable line item. This workshop maps directly to the [10 levers](../GitHub-Copilot-Token-Optimization-Asia-Software-GBB.md) that cut cost without cutting quality.
+Starting **June 1, 2026**, GitHub Copilot bills per token. Every prompt, every agent step, every tool call is a measurable line item. This workshop maps directly to the [10 levers](GitHub-Copilot-Token-Optimization-Asia-Software-GBB.md) that cut cost without cutting quality.
 
 > **Hidden, structural overhead is typically 90%+ of a request.** Most cost is invisible — not in what you type.
 
@@ -31,17 +31,17 @@ Output is the most expensive lane. One output-constraint instruction in `copilot
 
 | # | Exercise | Lever | Duration | Saving potential |
 |---|----------|-------|----------|-----------------|
-| 00 | [Setup & UBB Foundations](exercises/exercise-00-setup-and-ubb-foundations.md) | All | 15 min | Baseline |
-| 01 | [Prompt Compression & Language Tax](exercises/exercise-01-prompt-compression.md) | 1, 2 | 20 min | ~35–50% input |
-| 02 | [Context Management & Escalation Ladder](exercises/exercise-02-context-management.md) | 3 | 20 min | ~30–50% input |
-| 03 | [Output Control](exercises/exercise-03-output-control.md) | 4 | 15 min | ~60–80% output |
-| 04 | [Workflow Modes — Ask, Plan, Agent](exercises/exercise-04-workflow-modes.md) | 5 | 20 min | ~5–25× per task |
-| 05 | [Agent Configs & Persistent Instructions](exercises/exercise-05-agent-configs.md) | 6 | 25 min | ~15–25% per turn |
-| 06 | [Model Routing & Reasoning Budget](exercises/exercise-06-model-routing.md) | 7 | 20 min | ~25–55% |
-| 07 | [AGENTS.md Hygiene & Subagents](exercises/exercise-07-agents-md-and-subagents.md) | 8 | 20 min | ~10–20%+ |
-| 08 | [MCP Tool Pruning](exercises/exercise-08-mcp-tool-pruning.md) | 9 | 20 min | ~9–72% schema |
-| 09 | [Enterprise Guardrails & Team Policy](exercises/exercise-09-enterprise-guardrails.md) | 10 | 25 min | Org-wide control |
-| 10 | [Capstone — Full Optimised Feature Build](exercises/exercise-10-capstone.md) | All | 30 min | Scorecard |
+| 00 | [Setup & UBB Foundations](workshop/exercises/exercise-00-setup-and-ubb-foundations.md) | All | 15 min | Baseline |
+| 01 | [Prompt Compression & Language Tax](workshop/exercises/exercise-01-prompt-compression.md) | 1, 2 | 20 min | ~35–50% input |
+| 02 | [Context Management & Escalation Ladder](workshop/exercises/exercise-02-context-management.md) | 3 | 20 min | ~30–50% input |
+| 03 | [Output Control](workshop/exercises/exercise-03-output-control.md) | 4 | 15 min | ~60–80% output |
+| 04 | [Workflow Modes — Ask, Plan, Agent](workshop/exercises/exercise-04-workflow-modes.md) | 5 | 20 min | ~5–25× per task |
+| 05 | [Agent Configs & Persistent Instructions](workshop/exercises/exercise-05-agent-configs.md) | 6 | 25 min | ~15–25% per turn |
+| 06 | [Model Routing & Reasoning Budget](workshop/exercises/exercise-06-model-routing.md) | 7 | 20 min | ~25–55% |
+| 07 | [AGENTS.md Hygiene & Subagents](workshop/exercises/exercise-07-agents-md-and-subagents.md) | 8 | 20 min | ~10–20%+ |
+| 08 | [MCP Tool Pruning](workshop/exercises/exercise-08-mcp-tool-pruning.md) | 9 | 20 min | ~9–72% schema |
+| 09 | [Enterprise Guardrails & Team Policy](workshop/exercises/exercise-09-enterprise-guardrails.md) | 10 | 25 min | Org-wide control |
+| 10 | [Capstone — Full Optimised Feature Build](workshop/exercises/exercise-10-capstone.md) | All | 30 min | Scorecard |
 
 ---
 
@@ -82,4 +82,4 @@ All exercises use **future-you-simulator** — a personal growth simulator built
 
 ---
 
-**Start here:** [Exercise 00 — Setup & UBB Foundations](exercises/exercise-00-setup-and-ubb-foundations.md)
+**Start here:** [Exercise 00 — Setup & UBB Foundations](workshop/exercises/exercise-00-setup-and-ubb-foundations.md)
