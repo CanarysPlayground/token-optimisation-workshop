@@ -16,7 +16,7 @@ Your 20-character prompt → 2,000+ tokens billed
 
 The reason: your prompt is only the visible tip. Five hidden layers load before it reaches the model.
 
-![Token Usage](UBBPromptCost.png)
+![Token Usage](../assets/UBBPromptCost.png)
 
 | Layer | What it contains | Editable? |
 |-------|-----------------|-----------|
