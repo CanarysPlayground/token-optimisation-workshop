@@ -77,17 +77,7 @@ Complete the onboarding (name, age, one goal, one habit).
 
 ---
 
-## 3. Bookmark the AIC cost calculator
-
-Open the calculator and keep it available throughout the workshop:
-
-**[UBB Cost Calculator →](https://ashy-dune-0b4215a0f.7.azurestaticapps.net/detailed/index.html#/calculator)**
-
-After every recording step in any exercise, paste your `Input Tokens`,`Output Tokens` and `Cached Tokens` values here to convert them to a dollar cost.
-
----
-
-## 4. Record your baseline — the wasteful prompt
+## 3. Record your baseline — the wasteful prompt
 
 Open Copilot Chat (`Ctrl+Shift+I`) and run this **exactly as written**:
 
@@ -110,7 +100,7 @@ Open the **Agent Debug Logs** panel and record from the **Summary** section:
 
 ---
 
-## 5. Identify what made it expensive
+## 4. Identify what made it expensive
 
 | Anti-pattern in the prompt | Why it costs |
 |---------------------------|-------------|
@@ -123,7 +113,7 @@ This prompt is intentionally wasteful. By Exercise 10 you will complete the same
 
 ---
 
-## 6. Identify the token iceberg for this prompt
+## 5. Identify the token iceberg for this prompt
 
 ```
 [System prompt: ~800 t] + [Workspace index: ~6,000 t] + [Your prompt: ~50 t]
