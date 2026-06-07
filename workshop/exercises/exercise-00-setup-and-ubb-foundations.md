@@ -97,7 +97,6 @@ Open the **Agent Debug Logs** panel and record from the **Summary** section:
 | Copilot Usage (AIC) | |
 | Model used | |
 
-**Baseline AIC cost: ___________**
 
 ---
 
@@ -133,8 +132,6 @@ Your actual typed words were < 1% of the bill.
 
 - [ ] App running at `localhost:5173`
 - [ ] Agent Debug Logs panel showing Copilot usage data
-- [ ] AIC cost calculator bookmarked
-- [ ] Baseline AIC cost recorded
 - [ ] Understand the 5 hidden context layers
 - [ ] Understand input / cached / output pricing lanes
 
