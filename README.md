@@ -3,7 +3,7 @@
 
 **Total duration:** ~3.5 hours  
 **All exercises are mandatory.**  
-**App:** `future-you-simulator/` (same app as Workshop 1)
+**App:** `future-you-simulator/`
 
 ---
 
