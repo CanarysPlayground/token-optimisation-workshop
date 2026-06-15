@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { BarChart2 } from 'lucide-react';
 import {
@@ -39,9 +39,9 @@ export function LifeTimeline() {
   const { profile, projection1Year, projection5Year, unlockBadge } = useStore();
   const [activeView, setActiveView] = useState<'area' | 'radar'>('area');
 
-  if (!profile || !projection1Year || !projection5Year) return null;
+  useEffect(() => { unlockBadge('visionary'); }, []);
 
-  unlockBadge('visionary');
+  if (!profile || !projection1Year || !projection5Year) return null;
 
   const data = buildTimelineData(profile, projection1Year, projection5Year);
 
