@@ -65,7 +65,7 @@ Test the following implementation request:
 ```
 #.github/instructions/components.instructions.md Create a neon glassmorphism ProfilePopup component (fixed top-right, w-80) showing profile name/age, top 3 goals, 1yr projection scores and badges from useStore. Dismiss on outside click, Escape, or ✕. Wire it to the navbar avatar button.
 ```
-**Count tokens: ___________**
+
 ---
 
 ## Part C — Create a custom agent for TDD red-green workflow
