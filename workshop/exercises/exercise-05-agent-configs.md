@@ -55,14 +55,17 @@ Export as: export function ComponentName() — no default exports.
 Import Framer Motion as: import { motion } from 'framer-motion'.
 ```
 
-**Count tokens: ___________**
-
 Test it:
 1. Open `src/components/AlternateReality/AlternateReality.tsx` — ask a question
 2. Check the Output panel: do you see the components instruction loaded?
 3. Open `src/utils/aiSimulator.ts` — ask a question
 4. Confirm the components instruction is NOT loaded
 
+Test the following implementation request:
+```
+#.github/instructions/components.instructions.md Create a neon glassmorphism ProfilePopup component (fixed top-right, w-80) showing profile name/age, XP bar, top 3 goals, 1yr projection scores, 5yr delta, and badges from useStore. Dismiss on outside click, Escape, or ✕. Wire it to the navbar avatar button.
+
+**Count tokens: ___________**
 ---
 
 ## Part C — Create a custom agent for TDD red-green workflow
