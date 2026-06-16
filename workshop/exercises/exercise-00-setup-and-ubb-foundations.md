@@ -69,7 +69,7 @@ Complete the onboarding (name, age, one goal, one habit).
 ---
 
 ## 2. Enable token visibility
-1. Click on 3 dots in copilot chat("**views and more**) click on **Agent Debug Logs** panel and click on "**Enable in Settings**"
+1. Click on 3 dots in copilot chat(**views and more**) click on **Agent Debug Logs** panel and click on "**Enable in Settings**"
 2. Open the **Agent Debug Logs** panel (bottom panel → select **Agent Debug Logs** tab)
 3. After each request completes, the **Summary** section shows `Total Input Tokens`,`Total Output Tokens`, `Total Cached`, `Copilot Usage (AIC)`.
 
